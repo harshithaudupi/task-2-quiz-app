@@ -1,0 +1,10 @@
+^C:\USERS\USER\ANDROIDSTUDIOPROJECTS\BHARAT INTERN\QUIZ_APP\BUILD\WINDOWS\CMAKEFILES\7122F82281B9C0A26D06A12BEACBCE46\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
